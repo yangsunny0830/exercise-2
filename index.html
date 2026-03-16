@@ -6,13 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <div style="border: 2px solid black; display: inline-block; padding: 10px;">
-        Code example;
-        <pre><code>var person = {
-            firstName:"晴文",
-            lastName:"楊",
-            studentID:"113403046"
-        };</code></pre>
-    </div>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="晴文"><br><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="楊"><br><br>
+        <label for="sname">Student ID:</label><br>
+        <input type="text" id="sname" name="sname" value="113403046"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
 </body>
 </html>
