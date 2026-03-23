@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1 {
+            font-weight: bold;
+            padding: 10px;
+        }
+        h1.box1 {
+            border-style: double;
+            border-color: red;
+            border-width: 12px;
+            background-color: lightblue;
+        }
+        h1.box2 {
+            border-style: solid;
+            border-color: rgb(50, 50, 241);
+            border-width: 3px;
+            border-radius: 20px;
+            background-color: yellow;
+        }
+        h1.box3 {
+            border-style: dotted;
+            border-color: gray;
+            border-width: 12px;
+            background-color: mediumseagreen;
+        }
+    </style>
 </head>
 <body>
-    <svg width="500" height="500">
-        <rect x="20" y="20" width="200" height="200" style="fill:rgb(0,0,255);stroke-width:5;stroke:rgb(0,0,0)" />
-        <circle cx="220" cy="120" r="75" stroke="red" stroke-width="5" fill="yellow" />
-        
-    </svg>
+    <h1 class="box1">Hello World</h1>
+    <h1 class="box2">Hello World</h1>
+    <h1 class="box3">Hello World</h1>
 </body>
 </html>
