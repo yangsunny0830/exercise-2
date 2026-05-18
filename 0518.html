@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ex35 - Object Properties</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 30px; }
+    h2 { color: #333; }
+    pre {
+      background: #f4f4f4;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>All Properties of Person Object</h2>
+<pre id="allProps"></pre>
+
+<h2>Object After Deleting "age"</h2>
+<pre id="afterDelete"></pre>
+
+<script>
+  var Person = {
+    firstName: "Tony",
+    lastName: "Lee",
+    age: 50,
+    eyeColor: "Blue"
+  };
+
+  // List all properties
+  var propList = "";
+  for (var key in Person) {
+    propList += key + " : " + Person[key] + "\n";
+  }
+  document.getElementById("allProps").textContent = propList;
+
+  // Delete age property
+  delete Person.age;
+
+  // Print object after deletion
+  var afterList = "";
+  for (var key in Person) {
+    afterList += key + " : " + Person[key] + "\n";
+  }
+  document.getElementById("afterDelete").textContent = afterList;
+</script>
+
+</body>
+</html>
